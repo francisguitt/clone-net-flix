@@ -1,4 +1,4 @@
-const Prevent = document.getElementById('prevent').addEventListener('ckick',
+ document.getElementById('prevent').addEventListener('ckick',
 (e)=>{e.preventDefault()})
 
 const Email=document.getElementById('email');
