@@ -65,6 +65,6 @@ Btn
 
    
    const enter=()=>{
-   alert('Deseja Contratar un de nossos planos ? ')
+   alert('Deseja Contratar um de nossos planos ? ')
   
 }
