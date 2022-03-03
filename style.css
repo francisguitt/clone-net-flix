@@ -1,0 +1,117 @@
+body {
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.container{
+  position:relative;
+  width:100%;
+  height:100vh;
+  background:#121212;
+  border-radius:5px;
+  box-shadow:0 6px 20px rgba(0,0,0,.4);
+  overflow:hidden;
+}
+.bg-img{
+  position: absolute;
+  top:-40px;
+  width:100%;
+  height:300px;
+  background:url("1639030449622.jpg")center/cover;
+}
+.container::before{
+  content:"";
+  position: absolute;
+  width:100%;
+  height:100%;
+  z-index:1;
+  background: linear-gradient(to top,#121212 65%,transparent);
+}
+.content{
+  position: absolute;
+  bottom:0;
+  z-index:2;
+  width:100%;
+  height:530px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  align-items:center;
+  font-family: 'Poppins',
+  sans-serif;
+}
+form{
+  width:300px;
+  height:300px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+form input , button{
+  border:none;margin-top: 10px;
+  height:50px;
+  outline:none;
+  border-radius:2px;
+}
+form input{
+  width:300px;
+  margin:5px 0;
+  background:#333333;
+  padding:0 20px;
+}
+form input::placeholder{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+form button{
+  background:#E50813;
+  color:#fff;
+  font-size:16px;
+  font-weight:bolder;
+  font-family: 'Poppins', sans-serif;
+}
+.content p{
+  width:260px;
+  text-align: center;
+  color:#737373;
+  font-size:15px;
+}
+.content p a{
+  text-decoration:none;
+  color:#fff;
+}
+.content strong a{
+  text-decoration: none;
+  color: #333333;
+}
+
+
+@media(min-width:480px){
+  .container{
+    max-width:100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width:100%;
+    max-height: 95%;
+    margin-bottom: 50px;
+  }
+  
+ .bg-img{
+   background-position: center;
+   background-size:cover;
+   margin-bottom:-150px;
+   height: 1000px;
+ }
+}
